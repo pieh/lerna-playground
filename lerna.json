@@ -1,0 +1,13 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "publish": {
+    "allowBranch": "master",
+    "conventionalCommits": true,
+    "message": "chore(release): Publish",
+    "ignoreChanges": ["CHANGELOG.md"]
+  },
+  "version": "independent",
+  "useWorkspaces": true
+}
