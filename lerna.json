@@ -4,8 +4,6 @@
   ],
   "publish": {
     "allowBranch": "master",
-    "conventionalCommits": true,
-    "bump": "patch",
     "message": "chore(release): Publish",
     "ignoreChanges": ["CHANGELOG.md"]
   },
