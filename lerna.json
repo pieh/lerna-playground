@@ -1,11 +1,14 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "publish": {
     "allowBranch": "master",
     "message": "chore(release): Publish",
     "ignoreChanges": ["CHANGELOG.md"]
+  },
+  "command": {
+    "version": {
+      "changelogPreset": "conventional-changelog-pieh"
+    }
   },
   "version": "independent",
   "useWorkspaces": true
