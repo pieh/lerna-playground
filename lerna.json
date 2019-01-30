@@ -7,7 +7,8 @@
   },
   "command": {
     "version": {
-      "changelogPreset": "conventional-changelog-pieh"
+      "changelogPreset": "conventional-changelog-pieh",
+      "conventionalCommits": true
     }
   },
   "version": "independent",
