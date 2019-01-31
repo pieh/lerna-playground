@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pieh/lerna-playground/compare/package-a@1.2.0...package-a@2.0.0) (2019-01-31)
+
+
+### Features
+
+* breaking stuff ([0011f4d](https://github.com/pieh/lerna-playground/commit/0011f4d)) by [Michal Piechowiak](https://github.com/pieh/)
+
+
+### BREAKING CHANGES
+
+* description of breaking change
+
+
+
+
+
 # [1.2.0](https://github.com/pieh/lerna-playground/compare/package-a@1.1.0...package-a@1.2.0) (2019-01-30)
 
 
