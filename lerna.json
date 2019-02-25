@@ -7,7 +7,6 @@
   },
   "command": {
     "version": {
-      "changelogPreset": "conventional-changelog-pieh",
       "conventionalCommits": true
     }
   },
