@@ -8,8 +8,7 @@
   "command": {
     "version": {
       "conventionalCommits": true
-    },
-    "publish": { "registry": "http://localhost:4873/", "verifyAccess": false }
+    }
   },
   "version": "independent",
   "useWorkspaces": true
