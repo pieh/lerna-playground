@@ -1,10 +1,10 @@
 {
   "name": "@pieh/package-b",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@pieh/package-a": "^3.0.0"
+    "@pieh/package-a": "^3.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
