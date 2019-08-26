@@ -7,7 +7,8 @@
     "@pieh/package-a": "^3.0.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postpublish": "sleep 180"
   },
   "author": "",
   "license": "ISC",
