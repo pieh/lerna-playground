@@ -10,6 +10,9 @@
       "conventionalCommits": true
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "independent",
   "useWorkspaces": true
 }
