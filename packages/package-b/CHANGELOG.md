@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.1.0 (2019-08-26)
+
+
+### Features
+
+* bump package-b ([b3bcc5a](https://github.com/pieh/lerna-playground/commit/b3bcc5a))
+
+
+
+
+
 ## [1.0.9](https://github.com/pieh/lerna-playground/compare/package-b@1.0.8...package-b@1.0.9) (2019-03-26)
 
 **Note:** Version bump only for package package-b
