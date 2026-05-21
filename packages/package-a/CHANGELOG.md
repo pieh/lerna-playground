@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.6](https://github.com/pieh/lerna-playground/compare/package-a-v3.0.5...package-a-v3.0.6) (2026-05-21)
+
+
+### Bug Fixes
+
+* add dependency ([5b647be](https://github.com/pieh/lerna-playground/commit/5b647bea117ffb2086984d76b20d420f872838ed))
+
 ## [3.0.5](https://github.com/pieh/lerna-playground/compare/@pieh/package-a@3.0.4...@pieh/package-a@3.0.5) (2019-08-26)
 
 **Note:** Version bump only for package @pieh/package-a
