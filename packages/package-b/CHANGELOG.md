@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/pieh/lerna-playground/compare/package-b-v1.1.6...package-b-v1.1.7) (2026-05-21)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @pieh/package-a bumped from ^3.0.6 to ^3.0.7
+
 ## [1.1.6](https://github.com/pieh/lerna-playground/compare/package-b-v1.1.5...package-b-v1.1.6) (2026-05-21)
 
 

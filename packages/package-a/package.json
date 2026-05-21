@@ -1,6 +1,6 @@
 {
   "name": "@pieh/package-a",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -9,7 +9,7 @@
     "directory": "packages/package-a"
   },
   "dependencies": {
-    "@pieh/package-c": "^0.2.6"
+    "@pieh/package-c": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

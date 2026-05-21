@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/pieh/lerna-playground/compare/package-c-v0.2.6...package-c-v1.0.0) (2026-05-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* big upgrade
+
+### Features
+
+* big upgrade ([d823ea5](https://github.com/pieh/lerna-playground/commit/d823ea547e633216882c1c5b659d153f8400a216))
+
 ## [0.2.6](https://github.com/pieh/lerna-playground/compare/@pieh/package-c@0.2.5...@pieh/package-c@0.2.6) (2019-09-03)
 
 **Note:** Version bump only for package @pieh/package-c
