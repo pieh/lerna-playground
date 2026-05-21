@@ -1,0 +1,59 @@
+name: release
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: googleapis/release-please-action@5c625bfb5d1ff62eadeeb3772007f7f66fdcf071 # v4.4.1
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  publish:
+    # Independent of release-please (we don't use its outputs): the from-package step
+    # below reads versions from package.json and the registry, so the jobs run in
+    # parallel. Like the previous CircleCI setup, this runs on every push to main —
+    # it's registry-driven and idempotent, so it's a no-op when nothing new needs
+    # publishing, and self-heals a previously failed publish on the next push to main.
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: "24"
+          check-latest: true
+          registry-url: "https://registry.npmjs.org"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build workspaces
+        run: npm run build
+      - name: Publish unpublished packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          # `lerna list` enumerates the public (non-private) workspace packages —
+          # the same set `lerna publish from-package` would consider. --toposort
+          # orders dependencies before dependents (e.g. @netlify/config before
+          # @netlify/build) so a published package never references a dependency
+          # version that isn't on the registry yet.
+          packages=$(npx lerna list --json --toposort)
+          for i in $(seq 0 $(($(jq length <<< "$packages") - 1))); do
+            name=$(jq -r ".[$i].name" <<< "$packages")
+            version=$(jq -r ".[$i].version" <<< "$packages")
+            location=$(jq -r ".[$i].location" <<< "$packages")
+            if npm view "$name@$version" version > /dev/null 2>&1; then
+              echo "::notice::$name@$version already published, skipping"
+            else
+              echo "Publishing $name@$version"
+              npm publish "$location" --provenance
+            fi
+          done

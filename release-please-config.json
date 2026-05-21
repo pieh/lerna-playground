@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "node",
+  "separate-pull-requests": false,
+  "bootstrap-sha": "fd0a3bd9e36e357b47399edc9b87c6d6028a9891",
+  "plugins": ["node-workspace"],
+  "packages": {
+    "packages/package-a": {},
+    "packages/package-b": {},
+    "packages/package-c": {}
+  }
+}
